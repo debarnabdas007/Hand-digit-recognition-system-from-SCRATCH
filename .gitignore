@@ -1,0 +1,37 @@
+# =========================
+# 1. Virtual Environments
+# =========================
+venv/
+env/
+hand_digit_venv/
+
+# =========================
+# 2. Security (NEVER PUSH THESE)
+# =========================
+.env
+.streamlit/secrets.toml
+
+# =========================
+# 3. Python Cache & Logs
+# =========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+
+# =========================
+# 4. Machine Learning & Jupyter
+# =========================
+.ipynb_checkpoints/
+data/
+# NOTE: We are intentionally NOT ignoring *.pth files because 
+# your specific model is <1MB and needs to be pushed to GitHub for deployment.
+
+# =========================
+# 5. OS & Editor Hidden Files
+# =========================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
