@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    container_name: digit-backend
+    restart: unless-stopped
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "8501:8501"
+    environment:
+      # This tells Streamlit exactly how to talk to the backend container
+      - BACKEND_URL=http://backend:8000/api/v1/predict
+    container_name: digit-frontend
+    depends_on:
+      - backend
+    restart: unless-stopped

@@ -5,9 +5,10 @@ import base64
 from PIL import Image
 import io
 import numpy as np
+import os
 
-# This points to your FastAPI Receptionist
-API_URL = "http://localhost:8000/api/v1/predict"
+# Dynamically grab the URL from Docker, or default to localhost if running manually
+API_URL = os.getenv("BACKEND_URL", "http://localhost:8000/api/v1/predict")
 
 st.set_page_config(page_title="Digit Vision UI", layout="centered")
 
