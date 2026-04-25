@@ -8,7 +8,7 @@ import numpy as np
 import os
 
 # Dynamically grab the URL from Docker, or default to localhost if running manually
-API_URL = os.getenv("BACKEND_URL", "http://localhost:8000/api/v1/predict")
+API_URL = "https://debarnab007-digit-vision-backend.hf.space/api/v1/predict" 
 
 st.set_page_config(page_title="Digit Vision UI", layout="centered")
 
