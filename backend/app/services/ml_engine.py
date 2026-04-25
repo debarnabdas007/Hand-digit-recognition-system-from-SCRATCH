@@ -11,7 +11,7 @@ from app.core.exceptions import ModelLoadError, InvalidImageError
 
 logger = get_logger(__name__)
 
-# 1. The exact physical brain structure from your notebook
+# The exact physical NN structure from notebook
 class MNISTVisionModel(nn.Module):
     def __init__(self, input_shape: int, hidden_units: int, output_shape: int):
         super().__init__()
@@ -41,7 +41,7 @@ class MNISTVisionModel(nn.Module):
         x = self.classifier(x)
         return x
 
-# 2. The Engine that runs the brain
+# The Engine that runs the math and holds the model in memory
 class MLEngine:
     def __init__(self, model_path: str = "models/edge_digit_vision_final.pth"):
         # Defaulting to CPU is standard for web servers (cheaper hosting) unless GPU is explicitly available
@@ -49,7 +49,7 @@ class MLEngine:
         logger.info(f"Initializing ML Engine on device: {self.device}")
         
         try:
-            # Rebuild the 32-hidden-unit brain
+            
             self.model = MNISTVisionModel(input_shape=1, hidden_units=32, output_shape=10).to(self.device)
             
             # Load the memories (.pth file). map_location ensures it loads safely even on CPU-only servers

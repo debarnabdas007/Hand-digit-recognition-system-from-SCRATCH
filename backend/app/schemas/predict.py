@@ -7,7 +7,7 @@ class PredictRequest(BaseModel):
         description="A Base64 encoded string representing the user's drawn image."
     )
 
-# What the API promises to RETURN to Streamlit
+# What the API  RETURN to Streamlit
 class PredictResponse(BaseModel):
     prediction: int = Field(
         ..., 

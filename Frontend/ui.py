@@ -27,7 +27,7 @@ canvas_result = st_canvas(
     key="canvas",
 )
 
-# 2. Add a button to manually trigger the API call
+# Add a button to manually trigger the API call
 if st.button("Predict Digit"):
     if canvas_result.image_data is not None:
         

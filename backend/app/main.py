@@ -7,14 +7,14 @@ from app.core.logger import get_logger
 
 logger = get_logger(__name__)
 
-# 1. Ignite the API
+# Ignite the API
 app = FastAPI(
     title="Edge Digit Vision API",
     description="Professional ML Backend for PyTorch Digit Recognition",
     version="1.0.0"
 )
 
-# 2. Setup CORS (Security policy to allow Streamlit to communicate with us)
+#  Setup CORS (Security policy to allow Streamlit to communicate with us)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"], # In production, you would restrict this to your Streamlit URL
@@ -23,10 +23,10 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# 3. Attach the Receptionist to the Factory
+# Attach router to the main app
 app.include_router(predict_router, prefix="/api/v1")
 
-# 4. A simple health-check endpoint
+# Health check endpoint to verify the server is running
 @app.get("/")
 async def health_check():
     logger.info("Health check endpoint pinged.")
