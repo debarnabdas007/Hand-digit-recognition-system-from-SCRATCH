@@ -17,4 +17,4 @@ COPY . .
 EXPOSE 8000
 
 # Command to ignite the server when the container starts   :- When the mini-computer turns on, run this specific terminal command to start the server.
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "7860"]
