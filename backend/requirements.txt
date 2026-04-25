@@ -1,0 +1,8 @@
+fastapi==0.109.2
+uvicorn==0.27.1
+pydantic==2.6.1
+Pillow==10.2.0
+torch==2.2.0
+torchvision==0.17.0
+python-multipart==0.0.9
+numpy==1.26.4
