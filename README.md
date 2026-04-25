@@ -3,7 +3,7 @@
 A production-ready, decoupled microservice for handwritten digit recognition built from the ground up. The backend leverages an edge-optimized PyTorch CNN model (5.5MB footprint) deployed on Hugging Face Spaces with 16GB RAM, while the frontend runs on Streamlit Community Cloud for seamless user interaction.
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-View%20App-blue?style=for-the-badge)](https://hand-digit-recognition-system-from-scratch-cphfpx9zzvzfv8s3zp3.streamlit.app/)  
-[![Watch Demo](https://img.shields.io/badge/▶%20Watch%20Demo-Click%20Here-green?style=for-the-badge)]
+
 https://github.com/user-attachments/assets/7c77c598-c64d-46f1-9e27-e60d5bcfbbf8
 
 ## Tech Stack Icons
