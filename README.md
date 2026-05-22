@@ -222,5 +222,4 @@ The decoupled architecture ensures:
 - **Scalability**: Frontend and backend scale independently
 - **Reliability**: Single points of failure isolated
 - **Performance**: Edge-optimized model runs efficiently on CPU-only infrastructure
-- **Maintainability**: Clear separation of concerns between UI and ML logic</content>
-<parameter name="filePath">e:\Coding\Learning to code\Machine Learning\Hand-digit Recognition model\Hand-digit-recognition-system-from-SCRATCH\README.md
+- **Maintainability**: Clear separation of concerns between UI and ML logic
